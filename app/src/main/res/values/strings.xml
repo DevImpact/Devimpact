@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Dev impact</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">خدماتنا</string>
+    <string name="menu_about">التعريف بالفريق</string>
+    <string name="menu_Team_Members">أعضاء الفريق</string>
+    <string name="menu_share">نشر التّطبيق</string>
+    <string name="menu_rate">تقييم التّطبيق</string>
+</resources>
