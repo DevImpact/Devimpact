@@ -7,32 +7,14 @@
 
     <fragment
         android:id="@+id/nav_home"
-        android:name="com.devimpact.startup.ui.home.HomeFragment"
+        android:name="com.devimpact.startup.activities.home.HomeFragment"
         android:label="@string/menu_home"
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/nav_about"
-        android:name="com.devimpact.startup.ui.gallery.GalleryFragment"
+        android:name="com.devimpact.startup.activities.about.AboutFragment"
         android:label="@string/menu_about"
-        tools:layout="@layout/fragment_gallery" />
+        tools:layout="@layout/fragment_about" />
 
-    <fragment
-        android:id="@+id/nav_Team_Members"
-        android:name="com.devimpact.startup.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_Team_Members"
-        tools:layout="@layout/fragment_slideshow" />
-
-
-    <fragment
-        android:id="@+id/nav_share"
-        android:name="com.devimpact.startup.ui.share.ShareFragment"
-        android:label="@string/menu_share"
-        tools:layout="@layout/fragment_share" />
-
-    <fragment
-        android:id="@+id/nav_rate"
-        android:name="com.devimpact.startup.ui.send.SendFragment"
-        android:label="@string/menu_rate"
-        tools:layout="@layout/fragment_send" />
 </navigation>
