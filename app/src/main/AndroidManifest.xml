@@ -29,6 +29,26 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".DesignPicsActivity"
+            android:parentActivityName=".OurServicesActivity">
+        </activity>
+
+        <activity android:name=".OtherServicesActivity"
+            android:parentActivityName=".OurServicesActivity">
+        </activity>
+
+        <activity android:name=".DevelopingAppsActivity"
+            android:parentActivityName=".OurServicesActivity">
+        </activity>
+
+        <activity android:name=".VideosActivity"
+            android:parentActivityName=".OurServicesActivity">
+        </activity>
+
+        <activity android:name=".ProfitStrategiesActivity"
+            android:parentActivityName=".OurServicesActivity">
+        </activity>
     </application>
 
 </manifest>
