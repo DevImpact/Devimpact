@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/About"
+    android:layout_margin="30dp"
+    android:orientation="vertical"
+    android:background="#fff"
+    tools:context=".activities.about.About">
+
+
+    <TextView
+        android:id="@+id/titel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dev impact"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#063f8a"
+        android:gravity="center"
+        android:fontFamily="serif"/>
+
+
+    <View
+        android:layout_width="300dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:background="#5f99e4"
+        />
+
+
+
+    <TextView
+        android:id="@+id/dev"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:textSize="20dp"
+        android:textColor="#063f8a"
+        android:fontFamily="sans-serif-black"
+        android:text="   هو فريق برمجي عربي هدفه برمجة تطبيقات ذات قيمة إبداعيّة و برمجيّة إعتمادا على كوادر عربيّة ذات مستوى علمي مميّز و خبرة كبيرة بالبرمجة .
+هدفنا خلق أفكار و تطوير مشاريع برمجيّة إبداعيّة خلاقة قادرة على منافسة التّطبيقات العالميّة .
+ما يميّزنا :
+- الحرفيّة و الإبداع
+- سنوات من الخبرة
+- إحترام الوقت
+- السعي الدائم لإرضاء حرفائنا الكرام
+" />
+
+
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="250dp"
+        android:layout_marginLeft="30dp"
+        android:onClick="devClick"
+        android:background="@drawable/dev_pic"
+
+        />
+
+    <Button
+        android:id="@+id/facebook"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="250dp"
+        android:background="@drawable/facebook"
+        android:onClick="facebook"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/twet"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="250dp"
+        android:onClick="twitter_btn"
+        android:background="@drawable/twitter"
+        android:visibility="invisible" />
+    <Button
+        android:id="@+id/youtube"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="250dp"
+        android:onClick="youtube_btn"
+        android:background="@drawable/youtube"
+        android:visibility="invisible" />
+
+
+
+</LinearLayout>
