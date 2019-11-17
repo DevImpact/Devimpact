@@ -12,4 +12,10 @@
     <string name="menu_Team_Members">أعضاء الفريق</string>
     <string name="menu_share">نشر التّطبيق</string>
     <string name="menu_rate">تقييم التّطبيق</string>
+
+
+
+    <string name="if_you">إذا أعجبك التّطبيق فرجاءا قم بتقييمه</string>
+    <string name="rate_s">تقييم التّطبيق</string>
+
 </resources>

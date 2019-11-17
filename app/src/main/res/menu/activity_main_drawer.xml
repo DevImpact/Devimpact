@@ -12,10 +12,7 @@
             android:id="@+id/nav_about"
             android:icon="@drawable/ic_about"
             android:title="@string/menu_about" />
-        <item
-            android:id="@+id/nav_Team_Members"
-            android:icon="@drawable/ic_about"
-            android:title="@string/menu_Team_Members" />
+
 
     </group>
 
