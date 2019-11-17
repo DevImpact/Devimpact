@@ -1,4 +1,4 @@
-package com.devimpact.startup;
+package com.devimpact.startup.activities;
 
 import android.content.Intent;
 import android.os.Bundle;

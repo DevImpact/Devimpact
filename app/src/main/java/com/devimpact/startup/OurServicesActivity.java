@@ -1,21 +1,25 @@
 package com.devimpact.startup;
 
 import android.content.Intent;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
+
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.ApplicationInfo;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.MenuItem;
+
 import com.google.android.material.navigation.NavigationView;
 //import com.google.firebase.auth.FirebaseAuth;
 import java.io.File;
+
 import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
@@ -29,14 +33,10 @@ import com.devimpact.startup.R;
 import android.view.Menu;
 import android.widget.Button;
 
-public class OurServicesActivity extends AppCompatActivity {
 
-
-
-public class OurServicesActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener  {
+public class OurServicesActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
     private AppBarConfiguration mAppBarConfiguration;
 
-}
     FragmentTransaction fragmentTransaction;
     FragmentManager fragmentManager;
     //Add Navigation Drawer
@@ -67,16 +67,15 @@ public class OurServicesActivity extends AppCompatActivity implements Navigation
         drawer.addDrawerListener(toggle);
         toggle.syncState();
 
-        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+        navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(OurServicesActivity.this);
-
 
 
     }
 
     @Override
     public void onBackPressed() {
-        if (drawer.isDrawerOpen(GravityCompat.START)){
+        if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
         } else {
             super.onBackPressed();
@@ -97,7 +96,7 @@ public class OurServicesActivity extends AppCompatActivity implements Navigation
         } else if (id == R.id.nav_about) {
             Intent it = new Intent(OurServicesActivity.this, com.devimpact.startup.activities.about.About.class);
             startActivity(it);
-        }  else if (id == R.id.nav_share) {
+        } else if (id == R.id.nav_share) {
             Intent shareIntent = new Intent(Intent.ACTION_SEND);
             shareIntent.setType("text/plain");
             shareIntent.putExtra(Intent.EXTRA_TEXT, appUrl);

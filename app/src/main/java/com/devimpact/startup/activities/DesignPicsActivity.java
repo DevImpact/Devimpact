@@ -1,13 +1,15 @@
-package com.devimpact.startup;
+package com.devimpact.startup.activities;
 
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class VideosActivity extends AppCompatActivity {
+import com.devimpact.startup.R;
+
+public class DesignPicsActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_videos);
+        setContentView(R.layout.activity_design_pics);
     }
 }

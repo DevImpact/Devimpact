@@ -35,23 +35,23 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".DesignPicsActivity"
+        <activity android:name=".activities.DesignPicsActivity"
             android:parentActivityName=".OurServicesActivity">
         </activity>
 
-        <activity android:name=".OtherServicesActivity"
+        <activity android:name=".activities.OtherServicesActivity"
             android:parentActivityName=".OurServicesActivity">
         </activity>
 
-        <activity android:name=".DevelopingAppsActivity"
+        <activity android:name=".activities.DevelopingAppsActivity"
             android:parentActivityName=".OurServicesActivity">
         </activity>
 
-        <activity android:name=".VideosActivity"
+        <activity android:name=".activities.VideosActivity"
             android:parentActivityName=".OurServicesActivity">
         </activity>
 
-        <activity android:name=".ProfitStrategiesActivity"
+        <activity android:name=".activities.ProfitStrategiesActivity"
             android:parentActivityName=".OurServicesActivity">
         </activity>
     </application>
