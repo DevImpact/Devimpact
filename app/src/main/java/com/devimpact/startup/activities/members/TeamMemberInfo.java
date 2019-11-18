@@ -1,4 +1,4 @@
-package com.devimpact.startup.activities;
+package com.devimpact.startup.activities.members;
 
 import java.io.Serializable;
 
@@ -9,7 +9,7 @@ public class TeamMemberInfo implements Serializable {
     private String Division;
     private String profileImageUrl;
 
-    public TeamMemberInfo( String userName, String country, String title, String Division,String profileImageUrl){
+    public TeamMemberInfo(String userName, String country, String title, String Division, String profileImageUrl){
         this.userName = userName;
         this.country = country;
         this.title = title;

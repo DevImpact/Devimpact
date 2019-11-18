@@ -1,25 +1,19 @@
-package com.devimpact.startup.activities;
+package com.devimpact.startup.activities.members;
 
 
+import android.app.Fragment;
 import android.content.Intent;
 import android.os.Bundle;
-
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
-
 import com.devimpact.startup.OurServicesActivity;
 import com.devimpact.startup.R;
-
 import java.util.ArrayList;
 
-import androidx.appcompat.widget.Toolbar;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
+
 
 
 /**
@@ -44,8 +38,8 @@ public class DeveloperListFragment extends Fragment {
         TeamMembersList = new ArrayList<TeamMemberInfo>();
         lv = (ListView) rootView.findViewById(R.id.linearv1);
 
- ////// read member's data from string.xml
-        int j[]={R.array.dev1,R.array.dev2,R.array.dev3,R.array.dev4,R.array.dev5,R.array.dev6,R.array.dev7,R.array.dev8};
+ ////// read member's data from string.xml , it stored as arrays
+        int j[]={R.array.dev1, R.array.dev2, R.array.dev3, R.array.dev4, R.array.dev5, R.array.dev6, R.array.dev7, R.array.dev8};
         for( int i : j) {
             String[] teamMember = getResources().getStringArray(i);
             TeamMembersList.add(new TeamMemberInfo(teamMember[0],teamMember[1],teamMember[2],teamMember[3],teamMember[4]));
@@ -59,7 +53,6 @@ public class DeveloperListFragment extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 TeamMemberInfo developer=TeamMembersList.get(position);
-
                 Intent intent = new Intent(getActivity(), TeamMemberActivity.class);
                 intent.putExtra("developer",developer);
                 startActivity(intent);

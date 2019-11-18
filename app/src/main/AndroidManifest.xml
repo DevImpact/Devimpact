@@ -16,6 +16,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".activities.members.TeamMemberActivity"></activity>
         <activity android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -34,26 +35,22 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".activities.DesignPicsActivity"
-            android:parentActivityName=".OurServicesActivity">
-        </activity>
-
-        <activity android:name=".activities.OtherServicesActivity"
-            android:parentActivityName=".OurServicesActivity">
-        </activity>
-
-        <activity android:name=".activities.DevelopingAppsActivity"
-            android:parentActivityName=".OurServicesActivity">
-        </activity>
-
-        <activity android:name=".activities.VideosActivity"
-            android:parentActivityName=".OurServicesActivity">
-        </activity>
-
-        <activity android:name=".activities.ProfitStrategiesActivity"
-            android:parentActivityName=".OurServicesActivity">
-        </activity>
+        <activity
+            android:name=".activities.DesignPicsActivity"
+            android:parentActivityName=".OurServicesActivity"></activity>
+        <activity
+            android:name=".activities.OtherServicesActivity"
+            android:parentActivityName=".OurServicesActivity"></activity>
+        <activity
+            android:name=".activities.DevelopingAppsActivity"
+            android:parentActivityName=".OurServicesActivity"></activity>
+        <activity
+            android:name=".activities.VideosActivity"
+            android:parentActivityName=".OurServicesActivity"></activity>
+        <activity
+            android:name=".activities.ProfitStrategiesActivity"
+            android:parentActivityName=".OurServicesActivity"></activity>
+        <activity android:name="activities.members.TeamMemberActivity" />
     </application>
 
 </manifest>

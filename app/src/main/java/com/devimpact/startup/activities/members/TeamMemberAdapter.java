@@ -1,4 +1,4 @@
-package com.devimpact.startup.activities;
+package com.devimpact.startup.activities.members;
 
 import android.app.Activity;
 import android.view.LayoutInflater;

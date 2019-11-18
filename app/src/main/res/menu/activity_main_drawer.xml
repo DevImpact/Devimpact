@@ -13,6 +13,9 @@
             android:icon="@drawable/ic_about"
             android:title="@string/menu_about" />
 
+        <item android:id="@+id/ListOfDeveloper"
+            android:icon="@drawable/ic_about"
+            android:title="@string/ListOfDeveloper" />
 
     </group>
 

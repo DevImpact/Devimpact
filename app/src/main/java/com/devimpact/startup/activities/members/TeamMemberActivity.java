@@ -9,14 +9,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
-
 import com.devimpact.startup.R;
-public class TeamMemberActivity1 extends AppCompatActivity {
+
+public class TeamMemberActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_team_member1);
+        setContentView(R.layout.activity_team_member);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         setTitle(getString(R.string.ListOfDeveloper));
@@ -56,7 +56,6 @@ public class TeamMemberActivity1 extends AppCompatActivity {
         findViewById(R.id.twitter).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // https://twitter.com/DevImpact2018
                 Intent intent;
                 try{
                     // Get Twitter app
@@ -71,7 +70,7 @@ public class TeamMemberActivity1 extends AppCompatActivity {
             }
         });
 
-///// implements when button youtube pressed , it open DevImpact channel
+        ///// implements when button youtube pressed , it open DevImpact channel
         findViewById(R.id.youtube).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
