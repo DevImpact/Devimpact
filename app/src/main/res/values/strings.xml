@@ -12,4 +12,19 @@
     <string name="menu_Team_Members">أعضاء الفريق</string>
     <string name="menu_share">نشر التّطبيق</string>
     <string name="menu_rate">تقييم التّطبيق</string>
+    <string name="user_name">االاسم</string>
+    <string name="user_email">البريد الإلكتروني</string>
+    <string name="password">كلمة المرور</string>
+    <string name="re_password">إعادة كلمة المرور</string>
+    <string name="register">التسجيل</string>
+    <string name="have_account">هل لديك حساب؟ تسجيل الدخول</string>
+    <string name="register_phone"> التسجيل بواسطة رقم الموبايل</string>
+    <string name="login_phone"> الدخول بواسطة رقم الموبايل</string>
+    <string name="enter_phone"> ادخل رقم الموبايل</string>
+    <string name="enter_verificationcode"> ادخل رمز التفعيل</string>
+    <string name="get_verificationcode"> اطلب رمز التفعيل</string>
+    <string name="forgot_passowrd">هل نسيت كلمة المرور؟</string>
+    <string name="log_in">تسجيل الدخول</string>
+    <string name="sign_in">مستخدم جديد؟</string>
+
 </resources>
