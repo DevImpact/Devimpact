@@ -16,11 +16,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+<<<<<<< HEAD
         <activity android:name=".Account.PhoneAuth"></activity>
         <activity android:name=".Account.ProfileActivity" />
         <activity android:name=".OurServicesActivity"
             android:theme="@style/AppTheme.NoActionBar"/>
         <activity android:name=".Account.Register" />
+=======
+        <activity android:name=".activities.members.TeamMemberActivity"></activity>
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.about.About" />
+>>>>>>> e7cbcc74b6244b1b3cb8a266024129dece90fb5d
         <activity
             android:name=".Account.LogIn"
             android:label="@string/app_name">
@@ -30,6 +42,22 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".activities.DesignPicsActivity"
+            android:parentActivityName=".OurServicesActivity"></activity>
+        <activity
+            android:name=".activities.OtherServicesActivity"
+            android:parentActivityName=".OurServicesActivity"></activity>
+        <activity
+            android:name=".activities.DevelopingAppsActivity"
+            android:parentActivityName=".OurServicesActivity"></activity>
+        <activity
+            android:name=".activities.VideosActivity"
+            android:parentActivityName=".OurServicesActivity"></activity>
+        <activity
+            android:name=".activities.ProfitStrategiesActivity"
+            android:parentActivityName=".OurServicesActivity"></activity>
+        <activity android:name="activities.members.TeamMemberActivity" />
     </application>
 
 </manifest>

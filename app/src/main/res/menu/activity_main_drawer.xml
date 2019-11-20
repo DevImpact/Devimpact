@@ -12,10 +12,10 @@
             android:id="@+id/nav_about"
             android:icon="@drawable/ic_about"
             android:title="@string/menu_about" />
-        <item
-            android:id="@+id/nav_Team_Members"
+
+        <item android:id="@+id/ListOfDeveloper"
             android:icon="@drawable/ic_about"
-            android:title="@string/menu_Team_Members" />
+            android:title="@string/ListOfDeveloper" />
 
     </group>
 
