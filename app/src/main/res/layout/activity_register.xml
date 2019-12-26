@@ -92,12 +92,10 @@
         android:layout_marginLeft="110dp"
         android:layout_marginRight="110dp"
         android:layout_marginBottom="16dp"
-        android:background="@color/background_color4"
         android:text="@string/register"
-        android:textColor="@color/colorPrimary"
+        android:background="@color/background_color4"
         android:textSize="14sp"
         android:textStyle="bold"
-        android:focusableInTouchMode="true"
         />
 
     <TextView

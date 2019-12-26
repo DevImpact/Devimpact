@@ -2,8 +2,6 @@ package com.devimpact.startup.Account;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.AppCompatButton;
-
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.Intent;
@@ -18,12 +16,10 @@ import android.widget.Toast;
 
 import com.devimpact.startup.OurServicesActivity;
 import com.devimpact.startup.R;
-import com.devimpact.startup.activities.home.Home;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.textfield.TextInputEditText;
-import com.google.android.material.textfield.TextInputLayout;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -121,7 +117,7 @@ public class LogIn extends AppCompatActivity {
                             // Sign in success, update UI with the signed-in user's information
                             FirebaseUser user = mAuth.getCurrentUser();
                             // user is logged in ,open profile activity
-                            startActivity(new Intent(LogIn.this, ProfileActivity.class));
+                            startActivity(new Intent(LogIn.this, OurServicesActivity.class));
                             finish();
                         } else {
                             //dismiss progress dialog

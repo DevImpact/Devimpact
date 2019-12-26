@@ -1,11 +1,8 @@
 package com.devimpact.startup.Account;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatButton;
-import androidx.appcompat.widget.AppCompatImageButton;
-import androidx.appcompat.widget.AppCompatImageView;
 
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
@@ -19,16 +16,12 @@ import android.util.Patterns;
 import android.view.View;
 import android.view.WindowManager;
 import android.webkit.MimeTypeMap;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.devimpact.startup.OurServicesActivity;
 import com.devimpact.startup.R;
-import com.devimpact.startup.activities.home.Home;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -173,8 +166,15 @@ public class Register extends AppCompatActivity {
                     mPassword.setFocusable(true);
 
                 } else if (!Password.equals(RePassowrd)){
+                    mRePassword.setError("password not matching");
+                    mRePassword.setFocusable(true);
 
-                } else {
+                }
+                else if (!Password.equals(RePassowrd)){
+                    mRePassword.setError("password not matching");
+                    mRePassword.setFocusable(true);
+
+                }else {
                     RegisterUser(Email, Password);  // registeruser
                 }
 

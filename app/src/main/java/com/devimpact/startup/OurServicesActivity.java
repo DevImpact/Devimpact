@@ -14,9 +14,13 @@ import android.content.DialogInterface;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.MenuItem;
+
+import com.devimpact.startup.Account.LogIn;
+import com.devimpact.startup.Account.ProfileActivity;
 import com.devimpact.startup.activities.home.HomeFragment;
 import com.devimpact.startup.activities.members.DeveloperListFragment;
 import com.google.android.material.navigation.NavigationView;
+import com.google.firebase.auth.FirebaseAuth;
 //import com.google.firebase.auth.FirebaseAuth;
 import androidx.appcompat.widget.Toolbar;
 import androidx.navigation.ui.AppBarConfiguration;
@@ -98,7 +102,13 @@ public class OurServicesActivity extends AppCompatActivity implements Navigation
         else if (id == R.id.nav_about) {
             Intent it = new Intent(OurServicesActivity.this, com.devimpact.startup.activities.about.About.class);
             startActivity(it);
-        } else if (id == R.id.nav_share) {
+        } else if (id == R.id.nav_login) {
+            Intent it = new Intent(OurServicesActivity.this, LogIn.class);
+            startActivity(it);}
+        else if (id == R.id.nav_profile) {
+            Intent it = new Intent(OurServicesActivity.this, ProfileActivity.class);
+            startActivity(it);}
+        else if (id == R.id.nav_share) {
             Intent shareIntent = new Intent(Intent.ACTION_SEND);
             shareIntent.setType("text/plain");
             shareIntent.putExtra(Intent.EXTRA_TEXT, appUrl);
@@ -119,7 +129,11 @@ public class OurServicesActivity extends AppCompatActivity implements Navigation
             AlertDialog dialog = dialogBuilder.create();
             dialog.show();
 
+        }else if (id == R.id.nav_signOut) {
+            FirebaseAuth.getInstance().signOut();
         }
+
+
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);

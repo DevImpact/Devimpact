@@ -12,7 +12,6 @@
     <string name="menu_Team_Members">أعضاء الفريق</string>
     <string name="menu_share">نشر التّطبيق</string>
     <string name="menu_rate">تقييم التّطبيق</string>
-<<<<<<< HEAD
     <string name="user_name">االاسم</string>
     <string name="user_email">البريد الإلكتروني</string>
     <string name="password">كلمة المرور</string>
@@ -27,7 +26,6 @@
     <string name="forgot_passowrd">هل نسيت كلمة المرور؟</string>
     <string name="log_in">تسجيل الدخول</string>
     <string name="sign_in">مستخدم جديد؟</string>
-=======
 
 
     <string name="profit_strategies">
@@ -151,6 +149,6 @@
         <item>برمجة تطبيقات الاندرويد</item>
         <item>saad</item>
     </string-array>
->>>>>>> e7cbcc74b6244b1b3cb8a266024129dece90fb5d
+    >>>>>>> e7cbcc74b6244b1b3cb8a266024129dece90fb5d
 
 </resources>
