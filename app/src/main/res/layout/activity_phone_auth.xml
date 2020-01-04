@@ -11,7 +11,6 @@
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/imageView"
         android:orientation="vertical"
         android:padding="35dp">
 
@@ -35,8 +34,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="2"
             android:digits="0123456789"
-            android:hint=" Phone no"
-            android:maxLength="10" />
+            android:hint="@string/enter_phone"/>
 
         <Button
             android:id="@+id/buttonContinue"
@@ -46,7 +44,7 @@
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="88dp"
             android:background="#00e5ff"
-            android:text="Send OTP"
+            android:text="@string/get_verificationcode"
             android:textAllCaps="false"
             android:textSize="20sp"
             android:textStyle="bold" />
