@@ -41,7 +41,7 @@ public class LogIn extends AppCompatActivity {
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_log_in);
         //Activity Title
-        getSupportActionBar().setTitle("Log in");
+        getSupportActionBar().setTitle(getString(R.string.login));
 
 
 

@@ -79,7 +79,7 @@ public class Register extends AppCompatActivity {
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_register);
         //Activity Title
-        getSupportActionBar().setTitle("Register");
+        getSupportActionBar().setTitle(getString(R.string.newAccount));
 
 
         //User id/Images/Profile Pic.jpg

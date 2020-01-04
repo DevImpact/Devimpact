@@ -7,16 +7,11 @@
     tools:context=".activities.VideosActivity"
     android:padding="8dp">
 
-    <TextView
-        android:id="@+id/text_view"
+    <fragment
+        android:id="@+id/youtube_player_fragment"
+        android:name="com.google.android.youtube.player.YouTubePlayerFragment"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/videos"
-        android:textAppearance="?android:textAppearanceLarge"
-        android:textStyle="bold"
-        android:textColor="@android:color/black"
-        android:layout_marginBottom="8dp"
-        android:padding="4dp"/>
+        android:layout_height="wrap_content"/>
 
     <Button
         android:layout_width="wrap_content"

@@ -61,6 +61,11 @@
 
     <string name="youtubeAPIKey">AIzaSyBu40VyAAKoU2nSY9z580xFKh_fxu6XLqY</string>
     <string name="youtubeVideo_id">m2X7tIvJD2c</string>
+    <string name="youtubeDesignPics_id">m2X7tIvJD2c</string>
+    <string name="youtubeDeveolpingApp_id">m2X7tIvJD2c</string>
+    <string name="youtubeOtherServices_id">m2X7tIvJD2c</string>
+    <string name="youtubeProfitStrategies_id">m2X7tIvJD2c</string>
+    <string name="youtubeVideoActvity_id">m2X7tIvJD2c</string>
     <string name="country">الدولة</string>
     <string name="title">المهنة</string>
     <string name="Division">الشعبة</string>
