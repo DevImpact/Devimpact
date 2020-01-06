@@ -70,24 +70,6 @@ public class About extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    //زر الرجوع الى الخلف للخروج من التطبيق
-    @Override
-    public void onBackPressed() {
-
-//إذا كان الوقت في الهاتف اصغر من 3 ثواني يتم الخروج من التطبيق
-        if (time+3000 > System.currentTimeMillis()){
-
-            super.onBackPressed();
-
-        }else {
-
-            Toast.makeText(About.this,"إضغط مره اخرى للخروج من التطبيق",Toast.LENGTH_SHORT).show();
-        }
-        time= System.currentTimeMillis();
-    }
-
-
-
 
     //عند الضعط على شعار الفريق
     public void devClick(View view) {

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/About"
-    android:layout_margin="30dp"
+    android:layout_margin="10dp"
     android:orientation="vertical"
     android:background="#fff"
     tools:context=".activities.about.About">
@@ -42,14 +42,7 @@
         android:textSize="20dp"
         android:textColor="#063f8a"
         android:fontFamily="sans-serif-black"
-        android:text="   هو فريق برمجي عربي هدفه برمجة تطبيقات ذات قيمة إبداعيّة و برمجيّة إعتمادا على كوادر عربيّة ذات مستوى علمي مميّز و خبرة كبيرة بالبرمجة .
-هدفنا خلق أفكار و تطوير مشاريع برمجيّة إبداعيّة خلاقة قادرة على منافسة التّطبيقات العالميّة .
-ما يميّزنا :
-- الحرفيّة و الإبداع
-- سنوات من الخبرة
-- إحترام الوقت
-- السعي الدائم لإرضاء حرفائنا الكرام
-" />
+        android:text="@string/about_Ac" />
 
 
 
