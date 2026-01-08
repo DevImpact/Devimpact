@@ -54,3 +54,4 @@ rm "$TMP_REQ" "$TMP_EXISTING"
 
 echo "[✓] Animations audit completed"
 echo "Markdown report generated: $OUTPUT_MD"
+
